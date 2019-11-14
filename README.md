@@ -11,16 +11,16 @@ The workflow like below, it start a ssh server for ssh connection and forward it
 
 1. install
 ```shell script
-go get github.com/henryhtl/ssh-to-k8s
+go get github.com/htlhenry/ssh-to-k8s
 ```
 or
 ```shell script
-git clone github.com/henryhtl/ssh-to-k8s $GOPATH/src/github.com/henryhtl
+git clone github.com/htlhenry/ssh-to-k8s $GOPATH/src/github.com/htlhenry
 ```
 
 2. build
 ```shell script
-cd $GOPATH/src/github.com/henryhtl
+cd $GOPATH/src/github.com/htlhenry
 go build -o ssh-to-k8s main.go
 ```
 
