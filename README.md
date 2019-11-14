@@ -33,6 +33,7 @@ go build -o ssh-to-k8s main.go
 4. use it
 
 ```shell script
+# Note: there not auth user implement
 ssh -o "UserKnownHostsFile /dev/null" 127.0.0.1 -p 2222
 
 # flow the prompt enter <namespace> <pod> <container> login to k8s
