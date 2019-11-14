@@ -30,12 +30,12 @@ go build -o ssh-to-k8s main.go
 ./ssh-to-k8s -h   # show help msg
 ```
 
-4. connect to k8s
+4. use it
 
 ```shell script
 ssh -o "UserKnownHostsFile /dev/null" 127.0.0.1 -p 2222
 
-# flow the prompt enter <namespace> <pod> <container>
+# flow the prompt enter <namespace> <pod> <container> login to k8s
 ```
 
 ## Acknowledgments
