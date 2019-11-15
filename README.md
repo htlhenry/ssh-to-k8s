@@ -15,7 +15,7 @@ go get github.com/htlhenry/ssh-to-k8s
 ```
 or
 ```shell script
-git clone github.com/htlhenry/ssh-to-k8s $GOPATH/src/github.com/htlhenry
+git clone github.com/htlhenry/ssh-to-k8s $GOPATH/src/github.com/htlhenry/ssh-to-k8s/
 ```
 
 2. build
@@ -27,7 +27,7 @@ go build -o ssh-to-k8s main.go
 3. run
 ```shell script
 # must spcefic the kubernetes config file(or default ~/.kube/config)
-./ssh-to-k8s -h   # show help msg
+./ssh-to-k8s -h   # show help message
 ```
 
 4. use it
@@ -36,7 +36,9 @@ go build -o ssh-to-k8s main.go
 # Note: there not auth user implement
 ssh -o "UserKnownHostsFile /dev/null" 127.0.0.1 -p 2222
 
-# flow the prompt enter <namespace> <pod> <container> login to k8s
+# flow the help message, enter:
+# <namespace> <pod> <container> 
+# login to k8s
 ```
 
 ## Acknowledgments
