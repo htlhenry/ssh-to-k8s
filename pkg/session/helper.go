@@ -1,8 +1,8 @@
 package session
 
 import (
-    "github.com/gliderlabs/ssh"
-    "io"
+	"github.com/gliderlabs/ssh"
+	"io"
 )
 
 var tips = `
@@ -13,13 +13,13 @@ var tips = `
     dev test-pod test-container
 
     Enter 'h' for show the help
+    Enter 'exit' to leave session.
 `
 
-
 func WriteToSessionWithCRLF(sess ssh.Session, s string) (int, error) {
-    return io.WriteString(sess, s + "\r\n")
+	return io.WriteString(sess, s+"\r\n")
 }
 
 func DisplayTips(sess ssh.Session) {
-    sess.Write([]byte(tips))
+	sess.Write([]byte(tips))
 }
