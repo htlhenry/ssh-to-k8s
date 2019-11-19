@@ -23,7 +23,7 @@ var rootCmd = &cobra.Command{
 
 func init() {
 	rootCmd.PersistentFlags().StringVarP(&KubeConfigPath,
-		"kubeConfigPath", "c", "", "k8s config file")
+		"kubeConfigPath", "c", "", "k8s config file (default: ~/.kube/config)")
 	rootCmd.PersistentFlags().StringVarP(&Port,
 		"port", "p", "2222", "listen port")
 }
