@@ -77,17 +77,17 @@ func SSHSessionHandler(sess ssh.Session) {
 		case "h", "help":
 			DisplayTips(sess)
 		case "exit":
-			WriteToSessionWithCRLF(sess, "bye!")
+			WriteToSession(sess, "bye!")
 			return
 		default:
 			strs, err := ValidateConnectString(line)
 			if err != nil {
-				WriteToSessionWithCRLF(sess, err.Error())
+				WriteToSession(sess, err.Error())
 				continue
 			}
 			err = K8sProxy(sess, "", strs, win)
 			if err != nil {
-				WriteToSessionWithCRLF(sess, err.Error())
+				WriteToSession(sess, err.Error())
 				log.Error(err.Error())
 			}
 		}

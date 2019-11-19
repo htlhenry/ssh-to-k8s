@@ -16,7 +16,7 @@ var tips = `
     Enter 'exit' to leave session.
 `
 
-func WriteToSessionWithCRLF(sess ssh.Session, s string) (int, error) {
+func WriteToSession(sess ssh.Session, s string) (int, error) {
 	return io.WriteString(sess, s+"\r\n")
 }
 
