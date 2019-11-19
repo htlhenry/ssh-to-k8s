@@ -12,7 +12,7 @@ var tips = `
     # example:
     dev test-pod test-container
 
-    Enter 'h' for show the help
+    Enter 'h' or 'help' for show the message
     Enter 'exit' to leave session.
 `
 
