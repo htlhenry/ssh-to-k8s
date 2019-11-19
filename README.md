@@ -1,5 +1,5 @@
-A simple ssh proxy server. from **ssh client**  to [k8s](https://kubernetes.io/) **container**.
-this project it not production ready and not have the full features, hope inspire you do more things.
+A simple ssh proxy server, from **ssh client**  to [k8s](https://kubernetes.io/) **container**.
+it is **not production ready** and not have the full features, hope inspire you do more things.
 
 ## Description
 
