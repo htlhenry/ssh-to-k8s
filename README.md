@@ -26,8 +26,18 @@ go build -o ssh-to-k8s main.go
 
 3. run
 ```shell script
-# must spcefic the kubernetes config file(or default ~/.kube/config)
 ./ssh-to-k8s -h   # show help message
+
+SSH to k8s proxy
+
+Usage:
+  ssh-to-k8s [flags]
+
+Flags:
+  -h, --help                    help for ssh-to-k8s
+  -c, --kubeConfigPath string   k8s config file (default: ~/.kube/config)
+  -p, --port string             listen port (default "2222")
+
 ```
 
 4. use it
